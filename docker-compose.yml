@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: dockerized-react
+    image: dockerized-react
+    build:
+      context: .
+    ports:
+      - 80:3000
