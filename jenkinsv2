@@ -3,7 +3,8 @@ pipeline {
      stages {
         stage("Build") {
             steps {
-                sh 'build.sh'
+                sh "chmod +x -R ${env.WORKSPACE}"
+                sh './jenkins/build.sh'
             }
         }
         stage("Deploy") {
