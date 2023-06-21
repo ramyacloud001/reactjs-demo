@@ -1,0 +1,15 @@
+pipeline {
+     agent any
+     stages {
+        stage("Build") {
+            steps {
+                sh '/var/www/jenkins-react-app/build.sh'
+            }
+        }
+        stage("Deploy") {
+            steps {
+                sh '/var/www/jenkins-react-app/deploy.sh'
+            }
+        }
+    }
+}
