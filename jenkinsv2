@@ -1,8 +1,15 @@
-stage('Setting the variables values') {
-    steps {
-         pwd
-         sh '''#!/bin/bash
-                 echo "hello world" 
-         '''
+pipeline {
+     agent any
+     stages {
+        stage("Build") {
+            steps {
+                sh '/root/build.sh'
+            }
+        }
+        stage("Deploy") {
+            steps {
+                sh '/var/www/jenkins-react-app/deploy.sh'
+            }
+        }
     }
 }
