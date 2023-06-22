@@ -3,7 +3,7 @@ pipeline {
      stages {
         stage("Build") {
             steps {
-                sh '/root/build.sh'
+                sh '/var/lib/jenkins/workspace/react-testv2/build.sh'
             }
         }
         stage("Deploy") {
