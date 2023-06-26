@@ -7,7 +7,8 @@ pipeline {
                 sh '/var/lib/jenkins/workspace/react-testv2/deploy1.sh'
             }
         }
-<<<<<<< HEAD
+    }
+}<<<<<<< HEAD
 =======
             
 >>>>>>> eea9cbbd0dfb72aef1b33379681ee2dbdcde8e20
