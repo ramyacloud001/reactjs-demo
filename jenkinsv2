@@ -7,9 +7,9 @@ pipeline {
                 sh '/var/lib/jenkins/workspace/react-testv2/build.sh'
             }
         }
-        stage("Deploy") {
-            steps {
-                sh '/var/lib/jenkins/workspace/react-testv2/deploy.sh'
+#        stage("Deploy") {
+#            steps {
+#                sh '/var/lib/jenkins/workspace/react-testv2/deploy.sh'
             }
         }
     }
