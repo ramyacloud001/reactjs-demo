@@ -10,11 +10,8 @@ pipeline {
             steps {
                 script {
                     withCredentials([
-                        string(credentialsId: '24e6d8c0-e581-43bf-b668-d481886cd491', variable: 'AKIAQJSWPSEJEYZGLRUZ
-'),
-                        string(credentialsId: '24e6d8c0-e581-43bf-b668-d481886cd491', variable: 'ijv9vPzROxjio+cdSgnF3CXozYgkk9TAjnayHsn6
-')
-                    ]) {
+                        string(credentialsId: '24e6d8c0-e581-43bf-b668-d481886cd491', variable: 'AKIAQJSWPSEJEYZGLRUZ'),
+                        string(credentialsId: '24e6d8c0-e581-43bf-b668-d481886cd491', variable: 'ijv9vPzROxjio+cdSgnF3CXozYgkk9TAjnayHsn6')]) {
                         sh 'aws eks update-kubeconfig --name eks1'
                         // Now you can use kubectl or kubernetesDeploy steps with the authenticated kubeconfig
                     }
